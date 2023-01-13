@@ -1,0 +1,62 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+.success{
+    padding: 0 0 5rem 0;
+    .success-logo-box{
+        height: 12rem;
+        width: 12rem;
+        margin: 1rem auto;
+        border-radius: 10px;
+
+        .feature {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            background-color: $peach;
+            
+            i {
+                @include absoluteCenter;
+                opacity: 10%
+
+            }
+
+            .feature-text {
+                @include absoluteCenter;
+                
+                .feature-title {
+                    color:$white;
+                    font-weight: 700;
+                    margin: 0;
+                }
+
+                .feature-sub-title {
+                    color:$gray-300;
+                    margin: 0;
+
+                }
+            }
+
+            &:hover{
+                filter: brightness(1.2);
+
+                
+            }
+        }
+    }
+
+    .about-photo-box {
+        max-width: 100%;
+        text-align: center;
+
+
+        img {
+
+            width: 100%;
+        }
+    }
+}
+
+

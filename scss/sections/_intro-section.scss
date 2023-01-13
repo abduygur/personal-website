@@ -1,0 +1,20 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.intro-section {
+    @include gradient;
+    padding: 3rem 0 0 0;
+    width: 100%;
+    height: 100%;
+
+    .photo-box {
+
+        opacity: 70%;
+    }
+
+    @include media-breakpoint-up(md){
+        padding: 7.5rem 0 0 0;
+
+    }
+
+}
