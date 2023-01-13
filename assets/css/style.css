@@ -11719,7 +11719,7 @@ textarea.form-control-lg {
   position: relative;
   overflow: hidden;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .skill-card {
     margin-bottom: 0;
   }
@@ -11762,11 +11762,11 @@ textarea.form-control-lg {
   color: #fff;
 }
 .skill-card .skill-img-area {
-  width: 100%;
+  overflow: hidden;
+  text-align: center;
 }
 .skill-card .skill-img-area img {
   padding: 0.2rem 0.1rem;
-  border-radius: 50%;
 }
 
 .menu {

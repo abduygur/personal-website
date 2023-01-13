@@ -5,7 +5,7 @@
 
 .skill-card {
     margin-bottom: 2rem;
-    @include media-breakpoint-up(md){
+    @include media-breakpoint-up(lg){
         margin-bottom: 0;
 
     }
@@ -68,10 +68,11 @@
     }
 
     .skill-img-area {
-        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        
         img {
             padding: 0.2rem 0.1rem;
-            border-radius: 50%;
         }
     }
 }
