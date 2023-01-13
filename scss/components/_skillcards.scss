@@ -1,0 +1,77 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+
+.skill-card {
+    margin-bottom: 2rem;
+    @include media-breakpoint-up(md){
+        margin-bottom: 0;
+
+    }
+    
+    @include card-gradient;
+    border-radius: 2rem;
+    padding: 2rem 1rem;
+    height: 30rem;
+    box-shadow: 0px 0.3rem 0.5rem $gray-500;
+    position: relative;
+    overflow: hidden;
+
+
+    .skill-card-photo{
+        position: absolute;
+        opacity: 5%;
+        padding-top: 2rem;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+
+    }
+
+    .skill-header-area{
+        margin-bottom: 3rem;
+        
+        .skill-header {
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            position: relative;
+
+            &:after{
+                display: block;
+                content:"";
+                width: 10rem;
+                height: 0.1rem;
+                position: absolute;
+                background-color: $navy;
+                box-shadow: 0px 0.3rem 0.5rem $navy;
+            }
+
+
+        }
+
+    }
+
+    .skill-text-area {
+        position: relative;
+        height: 12rem;
+        margin-bottom: 3rem;
+        overflow: hidden;
+        .skill-text {
+            position: absolute;
+            padding-top: 1rem;
+            color:$white;
+        }
+
+    }
+
+    .skill-img-area {
+        width: 100%;
+        img {
+            padding: 0.2rem 0.1rem;
+            border-radius: 50%;
+        }
+    }
+}

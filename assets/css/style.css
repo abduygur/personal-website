@@ -11709,6 +11709,66 @@ textarea.form-control-lg {
   font-size: 1.2rem !important;
 }
 
+.skill-card {
+  margin-bottom: 2rem;
+  background: linear-gradient(#ce7777 10%, rgba(43, 58, 85, 0.8) 90%);
+  border-radius: 2rem;
+  padding: 2rem 1rem;
+  height: 30rem;
+  box-shadow: 0px 0.3rem 0.5rem #adb5bd;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .skill-card {
+    margin-bottom: 0;
+  }
+}
+.skill-card .skill-card-photo {
+  position: absolute;
+  opacity: 5%;
+  padding-top: 2rem;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.skill-card .skill-header-area {
+  margin-bottom: 3rem;
+}
+.skill-card .skill-header-area .skill-header {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: relative;
+}
+.skill-card .skill-header-area .skill-header:after {
+  display: block;
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  position: absolute;
+  background-color: #2B3A55;
+  box-shadow: 0px 0.3rem 0.5rem #2B3A55;
+}
+.skill-card .skill-text-area {
+  position: relative;
+  height: 12rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+.skill-card .skill-text-area .skill-text {
+  position: absolute;
+  padding-top: 1rem;
+  color: #fff;
+}
+.skill-card .skill-img-area {
+  width: 100%;
+}
+.skill-card .skill-img-area img {
+  padding: 0.2rem 0.1rem;
+  border-radius: 50%;
+}
+
 .menu {
   background: linear-gradient(90deg, #2b3a55 40%, rgba(206, 119, 119, 0.8) 90%);
 }
@@ -11737,12 +11797,12 @@ textarea.form-control-lg {
 }
 
 .success {
-  padding: 0 0 5rem 0;
+  padding: 0 0 2rem 0;
 }
 .success .success-logo-box {
   height: 12rem;
   width: 12rem;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   border-radius: 10px;
 }
 .success .success-logo-box .feature {
@@ -11760,19 +11820,19 @@ textarea.form-control-lg {
   opacity: 10%;
 }
 .success .success-logo-box .feature .feature-text {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   position: absolute;
+  width: 100%;
 }
 .success .success-logo-box .feature .feature-text .feature-title {
   color: #fff;
   font-weight: 700;
   margin: 0;
+  padding: 1.5rem 0 0 0;
 }
 .success .success-logo-box .feature .feature-text .feature-sub-title {
   color: #dee2e6;
   margin: 0;
+  padding: 0;
 }
 .success .success-logo-box .feature:hover {
   filter: brightness(1.2);

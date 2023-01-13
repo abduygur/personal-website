@@ -5,6 +5,10 @@
     background:  linear-gradient(90deg, rgba($navy,1) 40%, rgba($peach,0.8) 90%); 
 }
 
+@mixin card-gradient{
+    background:  linear-gradient(rgba($peach,1) 10%, rgba($navy,0.8) 90%); 
+}
+
 // absolute center
 
 @mixin absoluteCenter {
