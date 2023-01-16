@@ -11613,7 +11613,7 @@ textarea.form-control-lg {
   position: relative;
   padding: 1rem 4rem 1rem 0.5rem;
   font-weight: 700;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   border-radius: 15px !important;
   border: none;
   background-color: rgba(255, 255, 255, 0.5);
@@ -11822,6 +11822,7 @@ textarea.form-control-lg {
   bottom: 0;
   width: 100%;
   text-align: end;
+  display: none;
 }
 .skill-card .skill-img-area {
   overflow: hidden;
