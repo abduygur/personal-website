@@ -4,10 +4,14 @@
 
 
 .skill-card {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
     @include media-breakpoint-up(lg){
         margin-bottom: 0;
-
+        margin-left: inherit;
+        margin-right: inherit;
     }
     
     @include card-gradient;
@@ -26,12 +30,14 @@
         width: 100%;
         padding: 0;
         margin: 0;
+        bottom:0;
+        left:0;
 
 
     }
 
     .skill-header-area{
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
         
         .skill-header {
             color: $white;
@@ -47,6 +53,7 @@
                 position: absolute;
                 background-color: $navy;
                 box-shadow: 0px 0.3rem 0.5rem $navy;
+                margin-top: 0.5rem;
             }
 
 
@@ -54,17 +61,28 @@
 
     }
 
+    .skill-sub-header {
+        text-align: center;
+        margin-top: 2rem;
+        height: 3rem;
+    }
+
     .skill-text-area {
         position: relative;
         height: 12rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         overflow: hidden;
         .skill-text {
             position: absolute;
             padding-top: 1rem;
             color:$white;
         }
-
+        .learn-more {
+            position: absolute;
+            bottom:0;
+            width: 100%;
+            text-align: end;
+        }
     }
 
     .skill-img-area {
@@ -72,7 +90,9 @@
         text-align: center;
         
         img {
-            padding: 0.2rem 0.1rem;
+            padding: 0.2rem 0.7rem;
+            height: 3rem;
+            opacity: 60%;
         }
     }
 }

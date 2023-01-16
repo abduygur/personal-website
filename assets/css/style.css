@@ -11709,8 +11709,48 @@ textarea.form-control-lg {
   font-size: 1.2rem !important;
 }
 
+.text-normal {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1rem;
+}
+.text-normal .first-letter {
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.5rem;
+}
+
+.text-subheader {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #F2E5E5;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+
+.learn-more-text {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 0.9rem;
+  border-color: rgba(242, 229, 229, 0.5);
+  letter-spacing: 0.1rem;
+}
+.learn-more-text a {
+  text-decoration: none;
+  color: #F2E5E5;
+  transition: color 0.2s;
+}
+.learn-more-text a:hover {
+  color: #fff;
+}
+
 .skill-card {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   background: linear-gradient(#ce7777 10%, rgba(43, 58, 85, 0.8) 90%);
   border-radius: 2rem;
   padding: 2rem 1rem;
@@ -11722,6 +11762,8 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .skill-card {
     margin-bottom: 0;
+    margin-left: inherit;
+    margin-right: inherit;
   }
 }
 .skill-card .skill-card-photo {
@@ -11731,9 +11773,11 @@ textarea.form-control-lg {
   width: 100%;
   padding: 0;
   margin: 0;
+  bottom: 0;
+  left: 0;
 }
 .skill-card .skill-header-area {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .skill-card .skill-header-area .skill-header {
   color: #fff;
@@ -11749,11 +11793,17 @@ textarea.form-control-lg {
   position: absolute;
   background-color: #2B3A55;
   box-shadow: 0px 0.3rem 0.5rem #2B3A55;
+  margin-top: 0.5rem;
+}
+.skill-card .skill-sub-header {
+  text-align: center;
+  margin-top: 2rem;
+  height: 3rem;
 }
 .skill-card .skill-text-area {
   position: relative;
   height: 12rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   overflow: hidden;
 }
 .skill-card .skill-text-area .skill-text {
@@ -11761,12 +11811,20 @@ textarea.form-control-lg {
   padding-top: 1rem;
   color: #fff;
 }
+.skill-card .skill-text-area .learn-more {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: end;
+}
 .skill-card .skill-img-area {
   overflow: hidden;
   text-align: center;
 }
 .skill-card .skill-img-area img {
-  padding: 0.2rem 0.1rem;
+  padding: 0.2rem 0.7rem;
+  height: 3rem;
+  opacity: 60%;
 }
 
 .menu {
@@ -11800,17 +11858,19 @@ textarea.form-control-lg {
   padding: 0 0 2rem 0;
 }
 .success .success-logo-box {
-  height: 12rem;
-  width: 12rem;
+  width: 100%;
+  height: 10rem;
   margin: 0.5rem auto;
+  box-shadow: 0px 3px 3px 3px #dee2e6;
+  padding: 0rem;
   border-radius: 10px;
 }
 .success .success-logo-box .feature {
   position: relative;
   height: 100%;
   width: 100%;
-  border-radius: 50%;
   background-color: #CE7777;
+  border-radius: 10px;
 }
 .success .success-logo-box .feature i {
   top: 50%;
@@ -11820,6 +11880,7 @@ textarea.form-control-lg {
   opacity: 10%;
 }
 .success .success-logo-box .feature .feature-text {
+  font-family: "Poppins", sans-serif;
   position: absolute;
   width: 100%;
 }
@@ -11830,9 +11891,9 @@ textarea.form-control-lg {
   padding: 1.5rem 0 0 0;
 }
 .success .success-logo-box .feature .feature-text .feature-sub-title {
-  color: #dee2e6;
+  color: #fff;
   margin: 0;
-  padding: 0;
+  padding: 0.1rem;
 }
 .success .success-logo-box .feature:hover {
   filter: brightness(1.2);
@@ -11840,13 +11901,19 @@ textarea.form-control-lg {
 .success .about-photo-box {
   max-width: 100%;
   text-align: center;
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .success .about-photo-box {
+    margin-bottom: 1rem;
+  }
 }
 .success .about-photo-box img {
   width: 100%;
 }
 
 .portfolio {
-  padding: 4rem 0;
+  padding: 1rem 0;
 }
 .portfolio button {
   text-transform: capitalize;

@@ -5,17 +5,21 @@
 .success{
     padding: 0 0 2rem 0;
     .success-logo-box{
-        height: 12rem;
-        width: 12rem;
+        width: 100%;
+        height: 10rem;
+        // width: 13rem;
         margin: 0.5rem auto;
+        box-shadow: 0px 3px 3px 3px $gray-300;
+        padding: 0rem;
         border-radius: 10px;
 
         .feature {
             position: relative;
             height: 100%;
             width: 100%;
-            border-radius: 50%;
             background-color: $peach;
+            border-radius: 10px;
+
             
             i {
                 @include absoluteCenter;
@@ -23,6 +27,7 @@
             }
 
             .feature-text {
+                font-family: 'Poppins', sans-serif;
                 position: absolute;
                 width: 100%;                
                 .feature-title {
@@ -32,9 +37,9 @@
                     padding: 1.5rem 0 0 0;
                 }
                 .feature-sub-title {
-                    color:$gray-300;
+                    color:$white;
                     margin: 0;
-                    padding: 0;
+                    padding: 0.1rem;
                 }
             }
 
@@ -47,6 +52,10 @@
     .about-photo-box {
         max-width: 100%;
         text-align: center;
+        margin-bottom: 3rem;
+        @include media-breakpoint-up(md){
+            margin-bottom: 1rem;
+        }
         img {
             width: 100%;
         }
