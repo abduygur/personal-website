@@ -4,30 +4,25 @@
 .footer{
     padding-top: 1rem;
     background-color: $footer;
+
 }
 
 // Contact Box
 
 .contact-box{
-    position: relative;
+    // position: relative;
 
 
 
     .contact-box-icon{
-        width: 3rem;
+        width: 1.5rem !important;
         stroke: $white;
-
-        @include media-breakpoint-up(sm){
-            width: 4rem;
-        }
-
-
     }
 
     .contact-box-info{
         padding: 0.4rem;
         font-weight: 600;
-        margin:0 auto;
+        margin:0 0;
 
         .contact-box-info-title {
             font-size: 1rem;
@@ -56,6 +51,13 @@
 // social media style
 .footer-social-media {
     background-color: rgba($peach, 0.4);
+
+    .contact-text {
+        margin-bottom: 1rem;
+        @include media-breakpoint-up(sm){
+            margin-bottom: 0;
+    }
+}
 
     a {
         color:$white;

@@ -11,6 +11,12 @@
             color: $white;
             text-transform: capitalize;
             font-weight: 600;
+            font-size: 1.3rem;
+            transition: all 0.1s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 }

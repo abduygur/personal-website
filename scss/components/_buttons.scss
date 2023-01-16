@@ -6,25 +6,28 @@
     @include media-breakpoint-down(sm){
         display: none;
     }
+    text-decoration: none;
     position: relative;
     padding: 1rem 4rem 1rem 0.5rem;
     font-weight: 700;
     margin-left: 0.5rem;
     border-radius: 15px !important;
-    border: 0.1rem solid rgba($white, 0.6);
+    border: none;
     background-color: rgba($white, 0.5);
+    transition: all 0.3s ease;
 
     span{
+        text-align: center;
         position: absolute;
         background-color: $primary;
         width: 2.5rem;
         height: 2.5rem;
         top: 50%;
-        right: 5px;
+        right: 1rem;
         transform: translateY(-50%);
         border-radius: 50%;
         i{
-            color: $white;
+            color: rgba($white, 0.5);
             font-size: 1rem;
             line-height: 2.5rem;
         }
@@ -34,6 +37,9 @@
     &:hover{
         @include gradient;
         color:white;
+        i {
+            color:rgba($white, 1)
+        }
 
         span {
             background-color: rgba($primary, 0.6);
